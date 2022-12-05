@@ -1,0 +1,40 @@
+.phone {
+  &_input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &_number {
+    display: flex;
+    gap: 8px;
+
+    label {
+      width: auto !important;
+      flex: 1;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    button {
+      width: 108px;
+      background-color: $white-20;
+    }
+  }
+
+  &_label {
+    display: flex;
+    gap: 8px;
+    position: relative;
+
+    img {
+      &:last-child {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 20px;
+      }
+    }
+  }
+}

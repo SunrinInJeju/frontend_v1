@@ -1,0 +1,25 @@
+.standard {
+  &_input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}
+
+.pw {
+  position: relative;
+
+  img {
+    &:last-child {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 20px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import "_variables";
+
+.register {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_btn {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    gap: 8px;
+    
+    button {
+      flex: 1;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      p {
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      &:first-child {
+        background-color: white;
+        color: $jeju;
+        border: solid 1px $jeju;
+      }
+
+      &:last-child {
+        background-color: $jenu-50;
+        color: $white-10;
+      }
+    }
+  }
+}
+
+.default {
+  width: 380px;
+
+  &_title {
+    padding: 0 12px;
+    margin-bottom: 48px;  
+    
+    &_sub {
+      color: $gray-50;
+      font-weight: 500;
+      font-size: 20px;
+      font-family: 'GmarketSansMedium';
+      margin-bottom: 8px;
+    }
+
+    &_main {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $black-70;
+        font-weight: 500;
+        font-size: 36px;
+        font-family: 'GmarketSansMedium';
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+.register_label {
+  background-color: $white-20;
+  border-radius: 26px;
+  padding: 16px 20px;
+  cursor: text;
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: $black-60;
+    font-weight: 500;
+    font-size: 16px;
+
+    &::placeholder {
+      color: $gray-50;
+    }
+  }
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.button_enable {
+  background-color: $jeju !important;
+}
